@@ -23,6 +23,5 @@ python train_test.py \
     --ckpt_load ${CKPT_LOAD} \
     --result_path ${RESULT_PATH} \
     --epochs ${EPOCHS} \
-    --save_at_epoch ${SAVE_AT_EPOCH} \
-    --gpu 1
+    --save_at_epoch ${SAVE_AT_EPOCH}
     
