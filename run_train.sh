@@ -2,7 +2,6 @@ pip install scipy
 pip install Pillow
 pip install imageio
 pip install matplotlib
-
 # TRAIN=$true
 DATASET_PATH=$1
 BATCH_SIZE=$2
@@ -12,8 +11,6 @@ CKPT_LOAD=$5
 RESULT_PATH=$6
 EPOCHS=$7
 SAVE_AT_EPOCH=$8
-
-
 python train_test.py \
     --train="True" \
     --dataset_path ${DATASET_PATH} \
