@@ -1,0 +1,13 @@
+FILES=D:\Umich_Semester\Church\TreeGAN_test\model\*
+OUTPUT_PATH=D:\Umich_Semester\Church\TreeGAN_test\Result
+
+for VARIABLE in $FILES 
+do
+	CloudCompare -O $VARIABLE -SAMPLE_MESH POINTS 5000 -REMOVE_RGB -REMOVE_NORMALS -C_EXPORT_FMT ASC -PREC 5 -EXT PTS -SAVE_CLOUDS FILE $OUTPUT_PATH -CLEAR
+done
+
+
+
+
+
+CloudCompare -O D:\Umich_Semester\Church\TreeGAN_test\model\gothic1.obj -SAMPLE_MESH POINTS 5000 -REMOVE_RGB -REMOVE_NORMALS -C_EXPORT_FMT ASC -PREC 5 -EXT PTS -SAVE_CLOUDS FILE  D:\Umich_Semester\Church\TreeGAN_test\Result\gothic1.pts -CLEAR
